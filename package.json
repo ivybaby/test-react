@@ -1,0 +1,51 @@
+{
+  "name": "test-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-react": "^6.24.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.0.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "babelify": "^8.0.0",
+    "eslint": "^4.10.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d lib",
+    "script-name": "babel-node script.js",
+    "lint": "eslint my-files.js"
+  },
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            "es2015"
+          ]
+        }
+      ]
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivybaby/test-react.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "ivybaby",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ivybaby/test-react/issues"
+  },
+  "homepage": "https://github.com/ivybaby/test-react#readme"
+}
